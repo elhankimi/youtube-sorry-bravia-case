@@ -87,7 +87,7 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
       {/* Ticker strip */}
       <Ticker />
 
-      {/* Header */}
+      {/* Header (single line with Logo, The 15 steps, Key numbers, and Download button) */}
       <Header />
 
       <main className="flex-1">
@@ -95,7 +95,7 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
             HERO SECTION
             - 2 columns on desktop: Copy left (~55%), Headline Card right (~45%)
             - Mobile: Visual stacks below headline
-            - Exact text from content.txt
+            - "Who this is for": shows full sentence once, without device cards
             ========================================================================= */}
         <section className="bg-white py-16 sm:py-20 md:py-28 lg:py-32 border-b border-[#E7EAEF]">
           <div className="max-w-[1180px] mx-auto px-5 md:px-10">
@@ -113,12 +113,12 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
                   CLAIM READY
                 </h1>
 
-                {/* Lead sentence */}
+                {/* Subtitle */}
                 <p className="text-[20px] sm:text-[23px] font-semibold text-[#0D1117] leading-[1.3] mb-8">
                   A free checklist for anyone about to file a warranty claim.
                 </p>
 
-                {/* WHO THIS IS FOR */}
+                {/* WHO THIS IS FOR: Full sentence shown once without extra device cards */}
                 <div className="border-l-2 border-[#B9E6D6] pl-5 py-1 mb-8 max-w-[62ch]">
                   <span className="font-mono text-[11px] font-semibold tracking-[0.16em] uppercase text-[#087A58] block mb-2">
                     WHO THIS IS FOR
@@ -128,7 +128,7 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
                   </p>
                 </div>
 
-                {/* Actions strictly using lines from content.txt */}
+                {/* Action button */}
                 <div className="flex flex-wrap items-center gap-4 pt-2">
                   <button
                     onClick={handleDownload}
@@ -161,11 +161,11 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
         {/* =========================================================================
             SECTION 1: BEFORE ANYTHING GOES WRONG (Steps 1 to 4)
             - White background
-            - Exact wording
+            - Anchor id "the-15-steps"
             ========================================================================= */}
-        <section id="before-anything-goes-wrong" className="bg-white py-20 sm:py-24 md:py-32 border-b border-[#E7EAEF]">
+        <section id="the-15-steps" className="bg-white py-20 sm:py-24 md:py-32 border-b border-[#E7EAEF]">
           <div className="max-w-[1180px] mx-auto px-5 md:px-10">
-            {/* Section Header Stack */}
+            {/* Section Header */}
             <div className="flex flex-col items-start mb-12 md:mb-16">
               <div className="bg-[#EEFAF5] border border-[#B9E6D6] text-[#065F43] font-mono text-[10px] tracking-[0.16em] uppercase px-[14px] py-[6px] rounded-full inline-flex items-center gap-2 mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#087A58]" />
@@ -304,11 +304,10 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
         {/* =========================================================================
             SECTION 2: WHEN THE FAULT APPEARS (Steps 5 to 7)
             - Alternating background: Mist (#F7F8FA)
-            - Exact wording
             ========================================================================= */}
         <section id="when-the-fault-appears" className="bg-[#F7F8FA] py-20 sm:py-24 md:py-32 border-b border-[#E7EAEF]">
           <div className="max-w-[1180px] mx-auto px-5 md:px-10">
-            {/* Section Header Stack */}
+            {/* Section Header */}
             <div className="flex flex-col items-start mb-12 md:mb-16">
               <div className="bg-[#EEFAF5] border border-[#B9E6D6] text-[#065F43] font-mono text-[10px] tracking-[0.16em] uppercase px-[14px] py-[6px] rounded-full inline-flex items-center gap-2 mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#087A58]" />
@@ -417,11 +416,10 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
         {/* =========================================================================
             SECTION 3: WHEN A TECHNICIAN VISITS (Steps 8 to 10)
             - White background
-            - Exact wording
             ========================================================================= */}
         <section id="when-a-technician-visits" className="bg-white py-20 sm:py-24 md:py-32 border-b border-[#E7EAEF]">
           <div className="max-w-[1180px] mx-auto px-5 md:px-10">
-            {/* Section Header Stack */}
+            {/* Section Header */}
             <div className="flex flex-col items-start mb-12 md:mb-16">
               <div className="bg-[#EEFAF5] border border-[#B9E6D6] text-[#065F43] font-mono text-[10px] tracking-[0.16em] uppercase px-[14px] py-[6px] rounded-full inline-flex items-center gap-2 mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#087A58]" />
@@ -531,11 +529,10 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
             SECTION 4: IF THE CLAIM IS REFUSED (Steps 11 to 15)
             - Dark section (#0D1117)
             - Bright emerald (#34D399) accent
-            - Exact wording
             ========================================================================= */}
         <section id="if-the-claim-is-refused" className="bg-[#0D1117] text-white py-20 sm:py-24 md:py-32 border-b border-[#0D1117]">
           <div className="max-w-[1180px] mx-auto px-5 md:px-10">
-            {/* Section Header Stack on Dark */}
+            {/* Section Header */}
             <div className="flex flex-col items-start mb-12 md:mb-16">
               <div className="bg-white/10 border border-white/20 text-[#34D399] font-mono text-[10px] tracking-[0.16em] uppercase px-[14px] py-[6px] rounded-full inline-flex items-center gap-2 mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#34D399]" />
@@ -702,26 +699,13 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
         </section>
 
         {/* =========================================================================
-            KEY NUMBERS FOR THE PAGE
+            KEY NUMBERS SECTION (Heading "KEY NUMBERS FOR THE PAGE" hidden per fix 1)
             - Alternating background: Mist (#F7F8FA)
             - Stat Grid: 3 cells joined by 1px hairline gaps inside one rounded card
-            - Tabular figures (52px), hot emerald cell
-            - Exact wording
             ========================================================================= */}
-        <section id="key-numbers-for-the-page" className="bg-[#F7F8FA] py-20 sm:py-24 md:py-32 border-b border-[#E7EAEF]">
+        <section id="key-numbers" className="bg-[#F7F8FA] py-16 sm:py-20 md:py-24 border-b border-[#E7EAEF]">
           <div className="max-w-[880px] mx-auto px-5 md:px-10">
-            {/* Section Header Stack */}
-            <div className="flex flex-col items-start mb-12 md:mb-16">
-              <div className="bg-[#EEFAF5] border border-[#B9E6D6] text-[#065F43] font-mono text-[10px] tracking-[0.16em] uppercase px-[14px] py-[6px] rounded-full inline-flex items-center gap-2 mb-4">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#087A58]" />
-                <span>KEY NUMBERS FOR THE PAGE</span>
-              </div>
-              <h2 className="font-extrabold text-[32px] sm:text-[40px] md:text-[47px] leading-[1.06] tracking-[-0.035em] text-[#0D1117]">
-                KEY NUMBERS FOR THE PAGE
-              </h2>
-            </div>
-
-            {/* Stat Grid Component: 1px hairline gaps inside rounded card */}
+            {/* Stat Grid Component directly without the note heading */}
             <div className="bg-[#E7EAEF] border border-[#E7EAEF] rounded-[18px] overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-[1px] shadow-card">
               {/* Cell 1: 15 */}
               <div className="bg-white p-7 sm:p-8 flex flex-col justify-between">
@@ -757,23 +741,12 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
         </section>
 
         {/* =========================================================================
-            SECTION: CALL TO ACTION
+            SECTION: CALL TO ACTION (Heading "CALL TO ACTION" hidden per fix 1)
             - White background
-            - Exact wording
+            - Action card with the two buttons directly
             ========================================================================= */}
-        <section id="call-to-action" className="bg-white py-20 sm:py-24 md:py-32 border-b border-[#E7EAEF]">
+        <section id="download-checklist" className="bg-white py-16 sm:py-20 md:py-24 border-b border-[#E7EAEF]">
           <div className="max-w-[880px] mx-auto px-5 md:px-10">
-            {/* Section Header Stack */}
-            <div className="flex flex-col items-start mb-12">
-              <div className="bg-[#EEFAF5] border border-[#B9E6D6] text-[#065F43] font-mono text-[10px] tracking-[0.16em] uppercase px-[14px] py-[6px] rounded-full inline-flex items-center gap-2 mb-4">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#087A58]" />
-                <span>CALL TO ACTION</span>
-              </div>
-              <h2 className="font-extrabold text-[32px] sm:text-[40px] md:text-[47px] leading-[1.06] tracking-[-0.035em] text-[#0D1117] mb-6">
-                CALL TO ACTION
-              </h2>
-            </div>
-
             {/* Action Card with exact text */}
             <div className="bg-[#F7F8FA] border border-[#E7EAEF] rounded-[18px] p-8 sm:p-10 shadow-card">
               <div className="flex flex-col sm:flex-row gap-5">
@@ -800,7 +773,7 @@ Claim Ready is a free, general guide. It is not legal advice. For your own case,
         </section>
       </main>
 
-      {/* Footer */}
+      {/* Footer (without "FOOTER NOTE" heading per fix 1) */}
       <Footer />
     </div>
   );
